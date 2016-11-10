@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.qianfeng.aragon.giftsaying.primary_fragment.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/home_fragment_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_title_c"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/icon_search"
+            android:text="xxxxx"
+            android:background="@drawable/search_btn_shape"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_gift_send_remind"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/home_fragment_tab_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_fragment_title_ll">
+
+        <ImageButton
+            android:id="@+id/home_fragment_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/arrow_index_down"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/home_fragment_ib">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/home_fragment_tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                />
+            <TextView
+                android:id="@+id/home_fragment_change_tab_txt"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="切换频道"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_fragment_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_fragment_tab_rl"
+        >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

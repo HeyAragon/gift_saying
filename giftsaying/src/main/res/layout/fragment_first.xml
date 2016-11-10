@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianfeng.aragon.giftsaying.primary_fragment.HomeFragment">
+
+    <ListView
+        android:id="@+id/first_fragment_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:dividerHeight="5dp"
+        >
+    </ListView>
+
+</FrameLayout>
